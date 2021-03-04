@@ -771,6 +771,12 @@ a {
 }
 
 /*About us*/
+@media screen and (max-width: 1200px) {
+  .section.about-us {
+    display: none;
+  }
+}
+
 .section.about-us {
   padding-bottom: 94px;
 }
