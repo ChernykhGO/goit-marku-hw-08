@@ -1,19 +1,14 @@
 /*Our team list*/
 .section.team {
   background: $backgroundColor;
-  padding: 94px 0;
-}
-
-.team .team.list {
-  display: flex;
-  margin-top: 50px;
+  padding-bottom: 60px;
 }
 
 .team .team-people {
-  width: 270px;
-
+  width: 450px;
+  margin: 0 auto;
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -36,4 +31,36 @@
   @include font($fs: 16px, $lh: 1.19);
   text-align: center;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 767px) {
+  .team .team-people {
+    width: 354px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-people {
+    flex-basis: calc ((100% -2 * 15px)/2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team .team.list {
+    display: flex;
+    margin-top: 50px;
+  }
+  .section.team {
+    padding: 94px 0;
+  }
+
+  .team .team-people {
+    width: 270px;
+    margin: 0 auto;
+  }
 }
