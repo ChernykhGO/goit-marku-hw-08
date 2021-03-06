@@ -1700,7 +1700,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
