@@ -2,6 +2,12 @@
 .logo {
   color: $logoColor;
   font-family: $secondFont;
-  @include font(26px, 700, 1.19);
-  margin-right: 93px;
+  @include font(24px, 700, 1.17);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    @include font(26px, 700, 1.19);
+    margin-right: 93px;
+  }
 }

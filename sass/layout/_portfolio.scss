@@ -1,39 +1,23 @@
 /* portfolio*/
-
 .section.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.list.portfolio-btn {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.portfolio.list {
+.portfolio-btn {
   display: flex;
   flex-wrap: wrap;
-  border-color: $lineColor;
+  margin-bottom: 40px;
 }
 
 .btn-list:not(:last-child) {
   margin-right: 8px;
 }
-
-.portfolio-cards {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 370px;
-  border: 1px solid $lineColor;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
+.btn-list {
+  margin-bottom: 15px;
+}
+.btn-list:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .list .caption {
@@ -47,13 +31,66 @@
   margin-bottom: 4px;
 }
 
-.portfolio-list {
-  padding: 20px 24px;
-}
-
 .portfolio-list .subtitle {
   color: $titleColor;
   @include font($fs: 16px, $lh: 1.88);
   letter-spacing: 0.03em;
   margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-cards:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-btn {
+    justify-content: center;
+  }
+  .portfolio.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .portfolio-cards {
+    margin: 15px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .list.portfolio-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .portfolio.list {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: $lineColor;
+  }
+
+  .portfolio-cards {
+    margin-right: 30px;
+    width: 370px;
+    border: 1px solid $lineColor;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  .portfolio-list {
+    padding: 20px 24px;
+  }
 }
