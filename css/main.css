@@ -1483,6 +1483,10 @@ a {
   height: 11px;
 }
 
+.button-modal-svg:hover, .button-modal-svg:focus {
+  fill: #2196f3;
+}
+
 /* form */
 .form {
   width: 100%;

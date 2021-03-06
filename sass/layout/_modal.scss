@@ -94,6 +94,10 @@
 .button-modal-svg {
   width: 11px;
   height: 11px;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
 }
 
 /* form */
