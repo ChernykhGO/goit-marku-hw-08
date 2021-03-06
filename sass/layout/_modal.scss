@@ -94,6 +94,8 @@
 .button-modal-svg {
   width: 11px;
   height: 11px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     fill: $accentColor;
