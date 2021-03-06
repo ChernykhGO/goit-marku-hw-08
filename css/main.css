@@ -1460,6 +1460,7 @@ a {
   .modal {
     width: 528px;
     height: 581px;
+    overflow: hidden;
   }
   .policy {
     font-size: 14px;

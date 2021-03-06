@@ -73,6 +73,7 @@
   .modal {
     width: 528px;
     height: 581px;
+    overflow: hidden;
   }
   .policy {
     @include font(14px, 400, 1.71);
