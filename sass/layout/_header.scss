@@ -51,6 +51,7 @@
     top: 8px;
   }
   .mobile-menu.is-open {
+    z-index: 2;
     transform: translateX(-50%) translateY(0%);
   }
 
