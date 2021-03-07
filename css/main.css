@@ -1440,7 +1440,7 @@ a {
 .checkbox:checked + .policy::before {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url("../images/icon-check.svg");
+  background-image: url("../images/Vector0.svg");
   background-size: contain;
   background-origin: border-box;
   background-position: center;
