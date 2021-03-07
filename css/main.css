@@ -949,10 +949,6 @@ a {
   margin: 0 auto;
 }
 
-.team .team-people:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .team.list .people-content {
   padding: 30px;
   text-align: center;
@@ -979,17 +975,19 @@ a {
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .team .team-people {
     margin: 0 auto;
   }
+  .team .team-people:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .section.team {
-    background: #f5f4fa;
-    padding-bottom: 94px;
-    padding-top: 94px;
+@media screen and (min-width: 767px) {
+  .team .team-people {
+    margin: 0 auto;
+    margin: 15px;
   }
   .team.list {
     display: -webkit-box;
@@ -1006,15 +1004,32 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team-people {
+    -ms-flex-preferred-size: calc 100% -30px/2;
+        flex-basis: calc 100% -30px/2;
+    margin: 15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .section.team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   .team .team.list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
-  }
-  .section.team {
-    padding: 94px 0;
   }
   .team .team-people {
     width: 270px;
