@@ -29,8 +29,11 @@
 
   display: block;
   margin-bottom: 4px;
+  // margin-top: 20px;
 }
-
+.portfolio-list {
+  padding: 20px 24px;
+}
 .portfolio-list .subtitle {
   color: $titleColor;
   @include font($fs: 16px, $lh: 1.88);
@@ -56,6 +59,9 @@
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
+  // .portfolio-list {
+  //   padding: 20px 24px;
+  // }
 }
 
 @media screen and (min-width: 1200px) {

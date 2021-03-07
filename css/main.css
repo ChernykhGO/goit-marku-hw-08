@@ -942,6 +942,7 @@ a {
 .section.team {
   background: #f5f4fa;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .team .team-people {
@@ -985,6 +986,11 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section.team {
+    background: #f5f4fa;
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   .team.list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1703,6 +1709,10 @@ a {
   letter-spacing: 0.06em;
   display: block;
   margin-bottom: 4px;
+}
+
+.portfolio-list {
+  padding: 20px 24px;
 }
 
 .portfolio-list .subtitle {
