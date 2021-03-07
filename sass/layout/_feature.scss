@@ -6,21 +6,35 @@
   max-width: 450px;
   margin: 0 auto;
 }
+
+.features.list .features.title {
+  @include font($fw: 700);
+  text-transform: uppercase;
+  // display: inline-block;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .list-item:not(:last-child) {
     margin-bottom: 30px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .features-icon {
-    max-width: 354px;
+  .features.title {
+    display: block;
+    text-align: center;
   }
 }
+
 @media screen and (min-width: 768px) {
   .list-item {
     flex-basis: calc((100% - 15px * 4) / 2);
     margin: 15px;
+  }
+  .features-icon {
+    max-width: 354px;
   }
 }
 
@@ -35,17 +49,6 @@
 .section.feature {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.features.list .features.title {
-  @include font($fw: 700);
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 10px;
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
 }
 
 .features.list .text {
